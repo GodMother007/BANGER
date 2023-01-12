@@ -1,0 +1,72 @@
+.aboutus-wrap {
+  height: auto;
+  margin-right: 10px;
+}
+
+.aboutus-logo {
+  width: 100%;
+  height: auto;
+}
+
+.aboutus-textarea {
+  text-align: center;
+}
+
+.aboutus-textarea h1{
+  font-size: small;
+  font-weight: 600;
+  margin: 10px auto;
+}
+
+.aboutus-text1 {
+  font-size: large;
+  font-weight: 900;
+}
+
+.aboutus-text2 {
+  font-size: medium;
+  font-weight: 800;
+}
+
+.aboutus_copylink {
+  margin-top: 50px;
+}
+
+.aboutus_copylink a {
+  color: black;
+  text-decoration: none;
+}
+
+/*PC時*/
+@media screen and (min-width: 769px){
+  .SPbr {
+    display: none;
+  }
+}
+
+/*モバイル以下時*/
+@media screen and (max-width: 768px){
+  .PCbr {
+    display: none;
+  }
+
+  .aboutus-wrap {
+    height: auto;
+    margin: 30px auto !important;
+    text-align: center;
+  }
+
+  .aboutus-logo {
+    width: 500px;
+  }
+
+  .aboutus-textarea h1 {
+    width: 500px;
+    margin: 18px auto !important;
+  }
+
+  .aboutus-text1 {
+    width: 500px;
+    margin: 0 auto !important;
+  }
+}

@@ -1,0 +1,23 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --color-green: #78c117;
+  --color-black:rgb(29, 30, 29);
+  --color-darkgray: rgb(52, 53, 51);
+  --color-lightgray: rgb(144, 141, 141);
+}
+
+.Wrapper {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+}

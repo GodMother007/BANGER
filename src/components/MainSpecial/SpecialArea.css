@@ -1,0 +1,130 @@
+.specialarea-wrap {
+  background-color: var(--color-black);
+}
+
+.special-wrap {
+  max-width: 1000px;
+  height: auto;
+  margin: auto;
+  padding: 30px 10px;
+  overflow: hidden;
+}
+
+.specials-title {
+  background-color: var(--color-green);
+  width: 100%;
+  height: 40px;
+  padding: 5px;
+  margin-bottom: 30px;
+}
+.specials-title span {
+  color: white;
+  width: 100%;
+  font-weight: 800;
+  font-size: large;
+}
+
+.special-items {
+  display: flex;
+  width: 100%;
+  height: auto;
+  column-gap: 20px;
+  padding: 5px;
+}
+
+.special {
+  border-bottom: 1px solid white;
+  width: calc((100% - 20px)/ 2);
+  height: auto;
+  transition: .2s;
+  padding: 10px 0;
+}
+
+.special:hover {
+  opacity: 0.8;
+  border-bottom: transparent;
+  outline: 3px solid var(--color-green);
+  cursor: pointer;
+}
+
+.special-img {
+  width: 100%;
+}
+
+.special-title {
+  color: white;
+  font-size: larger;
+  padding: 5px;
+}
+
+.special-text {
+  color: white;
+  font-size: large;
+  width: 100%;
+  height: auto;
+}
+
+.special-text span {
+  width: 100%;
+  word-wrap: break-word;
+}
+
+
+.Allspecial-button {
+  margin: 30px auto;
+  padding: 5px;
+  border: 1px solid white;
+  width: 400px;
+  height: auto;
+  text-align: center;
+  background-image: linear-gradient(to right, rgba(0,0,0,0) 50%, var(--color-green) 50%);
+	background-position: 0 0;
+	background-size: 200% auto;
+	transition: all .3s ease 0s;
+  display: table;
+}
+
+.Allspecial-button a {
+  padding: 10px;
+  margin: 0;
+  text-decoration: none;
+  color: white;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+/*PC時*/
+@media screen and (min-width: 992px){
+  .Allspecial-button:hover{
+    background-position: -100% 0;
+    color: white;
+    border-color: var(--color-green);
+  }
+}
+/*モバイル時*/
+@media screen and (max-width: 768px) {
+  .special-wrap {
+    width: 100% !important;
+  }
+
+  .Allspecial-button {
+    width: 100% !important;
+  }
+
+  .special-items {
+    display: block !important;
+  }
+
+  .special {
+    width: 100% !important;
+  }
+
+  .special:first-child {
+    width: 100% !important;
+    margin-bottom: 20px !important;
+  }
+
+  .special-img {
+    padding: 0 20px;
+  }
+}

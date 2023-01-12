@@ -1,0 +1,448 @@
+.contactus_header, .contactus_footer{
+  height: 100px;
+  width: 100%;
+  background-color: #000;
+  text-align: center;
+  position: relative;
+  display: block;
+}
+
+.contactus_header::after {
+  content: "";
+  background: url(../Contents/images/logowhite.svg);
+  display: inline-block;
+  width: 250px;
+  height: 65px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.contactus_footer::after {
+  content: "Copyright © BANGER!!! All Rights Reserved.";
+  color: white;
+  position: absolute;
+  height: 28px;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+
+.whopper {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#form {
+  margin-top: 10px;
+  max-width: 1000px;
+  height: auto;
+}
+
+.content_space {
+  padding: 10px 5px;
+  background: #fff;
+}
+
+.content_title {
+  margin: 25px 0;
+}
+
+.content_title p {
+  font-size: 150%;
+  color: #000;
+  font-weight: bold;
+  text-align: center;
+}
+
+form table {
+  width: 90%;
+  margin: 0 auto 40px;
+  border-collapse: collapse;
+  border-top: 3px solid #000;
+}
+
+form th {
+  padding: 40px 10px;
+  width: 300px;
+  text-align: left;
+  border-bottom: 1px solid #000;
+  vertical-align: middle;
+}
+
+form td {
+  padding: 40px 10px;
+  text-align: left;
+  border-bottom: 1px solid #000;
+}
+
+.hisu {
+  color: #ffffff;
+  background-color: #fd5a3d;
+  font-size: 80%;
+  margin-left: 10px;
+  padding: 2px 5px;
+}
+
+.ninni {
+  color: #ffffff;
+  background-color: #cccccc;
+  font-size: 80%;
+  margin-right: 10px;
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+
+/*お名前*/
+.name input {
+  width: 280px;
+}
+
+.email input {
+  width: 80%;
+}
+
+textarea {
+  width: 100%;
+}
+
+input[type="text"],
+input[type="email"]{
+  border: 1px solid #9d968d;
+  font-size: 16px;
+  line-height: 45px;
+  height: 45px;
+  padding: 0 15px;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+
+input::-webkit-input-placeholder {
+  color: #999;
+}
+
+input:-ms-input-placeholder {
+  color: #999;
+}
+
+input::-moz-placeholder {
+  color: #999;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus{
+  outline: 0;
+  border-color: #808080;
+  background: #dcdcdc;
+}
+
+.post input[type="button"] {
+  border-radius: 3px;
+  background: #FFF;
+  color: #000;
+  border: 1px solid #000;
+  cursor: pointer;
+  font-size: 13px;
+  line-height: 43px;
+  padding: 0 20px;
+  font-weight: bold;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.post input[type="button"]:hover {
+  background: #000;
+  color: #FFF;
+}
+
+.post input[type="button"]:focus {
+  outline: 0;
+}
+
+/*ラジオボタン*/
+input[type="radio"]{
+  visibility: hidden;
+  position: absolute;
+}
+
+input[type="radio"] + label{
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  padding: 0 0 0 35px;
+  margin-bottom: 10px;
+}
+
+input[type="radio"] + label:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 25px;
+  height: 25px;
+  border: 1px solid #9d968d;
+  border-radius: 3px;
+  content: '';
+  transition: .2s;
+  background-color: #fff;
+}
+
+input[type="radio"]:disabled + label:before {
+  background-color: #9d968d;
+  cursor: not-allowed;
+}
+
+input[type="radio"] + label:before {
+  border-radius: 100%;
+}
+
+input[type="radio"] + label:hover:before {
+  border-color: #000;
+}
+
+input[type="radio"]:disabled + label:hover:before {
+  border-color: #9d968d !important;
+}
+
+input[type="radio"] + label:after {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 13px;
+  height: 13px;
+  opacity: 0;
+  transition: .1s;
+  background: #000;
+  border-radius: 100%;
+}
+
+input[type="radio"]:checked + label:after {
+  opacity: 1;
+}
+
+form td ul {
+  list-style:none;
+  padding: 0;
+}
+
+form td ul li {
+  margin-bottom: 15px;
+}
+
+form td ul li:last-child {
+  margin-bottom: 0px;
+}
+
+/*テキストエリア*/
+textarea {
+  appearance: none;
+  border: 1px solid #9d968d;
+  border-radius: 3px;
+  font-size: 14px;
+  line-height: 1.6;
+  padding: 15px;
+  box-sizing: border-box;
+  display: block;
+}
+
+textarea:focus {
+  outline: 0;
+  border-color: #808080;
+  background: #dcdcdc;
+}
+
+#formButton {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#__send {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #000;
+  color: #fff;
+  border: 1px solid #000;
+  cursor: pointer;
+  font-size: 120%;
+  line-height: 250%;
+  padding: 0 20px;
+  font-weight: bold;
+  display: inline-block;
+  transition: color .3s, background-color .3s;
+  width: 40%;
+}
+
+#__send:hover {
+  background: #000;
+  color: #FFF;
+}
+
+#__commit {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #000;
+  color: #FFF;
+  border: 1px solid #000;
+  cursor: pointer;
+  font-size: 120%;
+  line-height: 250%;
+  padding: 0 20px;
+  font-weight: bold;
+  display: inline-block;
+  transition: color .3s, background-color .3s;
+  width: 40%;
+}
+
+#__commit:hover {
+  background: #FFF;
+  color: #000;
+}
+
+#__back {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  color: #7b7b7b;;
+  border: 1px solid #7b7b7b;
+  cursor: pointer;
+  font-size: 120%;
+  line-height: 250%;
+  padding: 0 20px;
+  font-weight: bold;
+  display: inline-block;
+  transition: color .3s, background-color .3s;
+  width: 40%;
+  margin-right: 40px;
+}
+
+#__back:hover {
+  background: #7b7b7b;
+  color: #FFF;
+}
+
+
+.error {
+  color: #C80003;
+  font-weight: bold;
+}
+
+.contactus_checked {
+  padding: 200px 100px;
+}
+
+.contactus_comment{
+  width: 300px;
+  height: 50px;
+  font-size: 15px;
+  display: block;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.back_top {
+  height: 80px;
+  width: 200px;
+  background-color: #000;
+  color: white;
+  font-weight: bold;
+  font-size: large;
+  display: block;
+  margin: auto;
+  cursor: pointer;
+}
+
+
+/*モバイル時*/
+@media screen and ( max-width: 736px ){
+  form th {
+    display: block;
+    width: 100%;
+    padding: 25px 0 0;
+    font-size: 120%;
+    border-bottom: none;
+    background-color: transparent;
+  }
+  form td {
+    display: block;
+  width: 100%;
+  padding: 25px 0px;
+  }
+
+  .name input {
+    width: 100%;
+    }
+  
+    .text1 input {
+      width: 100%;
+    }
+  
+    .day select {
+      width: 32%;
+    }
+  
+    .tel input {
+    width: 30%;
+    }
+
+  input[type="text"],
+  input[type="email"] {
+    font-size: 16px;
+    line-height: 1;
+    height: 40px;
+    padding: 0 10px;
+  }
+
+  .post input[type="button"] {
+    font-size: 12px;
+    line-height: 38px;
+    padding: 0 10px;
+    margin-left: 10px;
+  }
+  input[type="radio"] + label{
+    padding: 0 0 0 25px;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  input[type="radio"] + label:before {
+    top: 2px;
+    width: 18px;
+    height: 18px;
+  }
+  input[type="radio"] + label:after {
+    top: 7px;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+  }
+
+  textarea {
+    font-size: 16px;
+  }
+
+  #__send {
+    width: 80%;
+  }
+  #__back {
+    width: 80%;
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+  #__commit {
+    width: 80%;
+  }
+}

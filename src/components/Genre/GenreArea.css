@@ -1,0 +1,77 @@
+.genre-wrap {
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
+}
+
+.genre-title {
+  color: var(--color-green);
+  font-weight: 600;
+  font-size: larger;
+  background-color:var(--color-darkgray);
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.genre-list {
+  list-style: none;
+  font-size: small;
+  font-weight: 600;
+  padding: 5px;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.genre-item{
+  margin: 0;
+  height: 100%;
+  border: 1px solid black;
+  padding: 3px 8px;
+  text-align: center;
+	display: inline-block;
+	background-image: linear-gradient(to right, rgba(0,0,0,0) 50%, var(--color-green) 50%);
+	background-position: 0 0;
+	background-size: 200% auto;
+	transition: all .3s ease 0s;
+	text-decoration: none;
+  cursor: pointer;
+}
+
+.genre-item a {
+  color: black;
+  text-decoration: none;
+}
+
+.genre-list .genre-item:hover{
+  background-position: -100% 0;
+  border-color: var(--color-green);
+}
+
+.genre-list .genre-item:hover a{
+  color: white;
+}
+
+
+/*タブレット以下時*/
+@media screen and (max-width: 991px) {
+  .genre-wrap {
+    padding: 10px;
+  }
+}
+
+/*モバイル時*/
+@media screen and (max-width: 736px){
+  .genre-item{
+    background-image: none !important;
+  }
+
+  .genre-list .genre-item:hover a{
+    background-position: 0 !important ;
+    color: black !important;
+  }
+}

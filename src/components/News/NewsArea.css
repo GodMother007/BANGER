@@ -1,0 +1,78 @@
+.newsarea-wrap {
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
+}
+
+.news-title {
+  color: var(--color-green);
+  font-weight: 600;
+  font-size: larger;
+  background-color: var(--color-darkgray);
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.news-contents {
+  padding-top: 10px;
+}
+
+.news {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid black;
+  padding: 10px 5px;
+  transition: .2s;
+}
+
+.news:hover {
+  opacity: 0.8;
+  outline: 3px solid var(--color-green);
+}
+
+.news-innertop {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.news-img {
+  height: 80px;
+  width: 100px;
+}
+
+.news-text {
+  width: 150px;
+  margin-left: 5px;
+  vertical-align: top;
+  word-wrap: break-word;
+}
+
+.news-logo {
+  color: var(--color-green);
+  font-weight: 600;
+  font-size: small;
+}
+
+.news-date {
+  color: var(--color-lightgray);
+  font-size: small;
+  margin-left: 10px;
+  padding: 0 10px;
+  border-left: 1px solid var(--color-green);
+}
+
+.news-writer {
+  font-size: small;
+  border: 1px solid black;
+  padding: 3px;
+}
+
+/*タブレット以下時*/
+@media screen and (max-width: 991px) {
+  .newsarea-wrap {
+    padding: 10px;
+  }
+}

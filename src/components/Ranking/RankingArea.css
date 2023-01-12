@@ -1,0 +1,116 @@
+.ranking-wrap {
+  width: 100%;
+  height: auto;
+}
+
+.ranking-title {
+  color: var(--color-green);
+  font-weight: 600;
+  font-size: larger;
+  background-color: var(--color-darkgray);
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ranking-contents {
+  padding-top: 10px;
+}
+
+.ranking {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid black;
+  padding: 10px 5px;
+  transition: .2s;
+  text-decoration: none;
+  color: currentColor;
+}
+
+.ranking:hover {
+  opacity: 0.8;
+  outline: 3px solid var(--color-green);
+}
+
+.ranking-innertop {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.ranking-img {
+  height: 80px;
+  width: 100px;
+
+}
+.ranking-text {
+  width: 100%;
+  word-wrap: break-word;
+}
+.ranking-text::before {
+  width: 30px;
+  height: 20px;
+  background-color: var(--color-green);
+  content: "1";
+  color: white;
+  text-align: center;
+  display: block;
+}
+
+.ranking-text span {
+  width: 100%;
+  word-wrap: break-word;
+}
+
+.ranking2::before {
+  content: "2";
+}
+
+.ranking3::before {
+  content: "3";
+}
+
+.ranking4::before {
+  content: "4";
+}
+
+.ranking5::before {
+  content: "5";
+}
+
+.ranking-text {
+  margin-left: 5px;
+}
+
+.ranking-logo {
+  color: var(--color-green);
+  font-weight: 600;
+  font-size: small;
+}
+
+.ranking-date {
+  color: var(--color-lightgray);
+  font-size: small;
+  margin-left: 10px;
+  padding: 0 10px;
+  border-left: 1px solid var(--color-green);
+}
+
+.ranking-writer {
+  font-size: small;
+  border: 1px solid black;
+  padding: 3px;
+}
+
+/*タブレット以下時*/
+@media screen and (max-width: 991px) {
+  .ranking-wrap {
+    padding: 50px 10px 10px 10px;
+    width: 100%;
+  }
+
+  .ranking-text{
+    width: 70% !important;
+  }
+}
